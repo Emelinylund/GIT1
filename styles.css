@@ -30,4 +30,5 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #575757; /* Grå bakgrund vid hover */
   border-radius: 5px;        /* Rundade hörn vid hover */
+  
 }
