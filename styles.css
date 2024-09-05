@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling för navigationen */
+nav {
+  background-color: #333; /* Mörk bakgrundsfärg */
+  padding: 10px 20px;     /* Lite padding runt menyn */
+}
+
+nav ul {
+  list-style-type: none;  /* Ta bort punktlistor */
+  display: flex;          /* Gör listan horisontell */
+  justify-content: space-around; /* Jämnt fördelade objekt */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;          /* Vit textfärg */
+  text-decoration: none; /* Ta bort understrykning */
+  padding: 10px 20px;    /* Lite padding runt länkarna */
+  transition: background-color 0.3s; /* Smooth hover-effekt */
+}
+
+nav ul li a:hover {
+  background-color: #575757; /* Grå bakgrund vid hover */
+  border-radius: 5px;        /* Rundade hörn vid hover */
+}
