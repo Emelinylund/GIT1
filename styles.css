@@ -183,9 +183,13 @@ footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: var(--color-gray600);
+
   .container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 5px;
+
   }
   .credit {
     display: none;
@@ -193,7 +197,9 @@ footer {
 }
 
 
-
+#brands {
+  display: none;
+  }
 
 
 
@@ -212,7 +218,7 @@ header .container {
   gap: 3rem;
 
 }
-
+}
 footer {
   font-size: 14px;
 
@@ -225,9 +231,14 @@ footer {
   .credit {
     display: block;
   }
+
+  #bands {
+    display: block;
+  }
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 1400px) {
   .container {
     max-width: 1320px;  
   }
