@@ -196,14 +196,9 @@ footer {
   }
 }
 
-
 #brands {
   display: none;
-  }
-
-
-
-
+}
 
 @media (min-width: 768px) {
   .container {
@@ -218,24 +213,17 @@ header .container {
   gap: 3rem;
 
 }
-}
-footer {
-  font-size: 14px;
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-  }
+footer {
   .credit {
     display: block;
   }
-
-  #bands {
+}
+  #brands {
     display: block;
   }
 }
+
 
 
 @media (min-width: 1400px) {
