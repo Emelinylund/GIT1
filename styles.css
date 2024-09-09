@@ -6,6 +6,8 @@
 --color-primary: #6366F1;
 --color-gray600: #9397AD;
 --color-white: #FFFFFF;
+--color-gray300: #E2E5F1;
+
 
 --container-padding: 1rem;
 --transition-time: all 0.2s;
@@ -200,6 +202,15 @@ footer {
   display: none;
 }
 
+.brand-box {
+  border: 1px solid var(--color-gray300);
+  border-radius: 8px;
+  height: 100px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (min-width: 768px) {
   .container {
@@ -222,12 +233,19 @@ footer {
 }
   #brands {
     display: block;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
   }
 }
 
 
 
-@media (min-width: 1400px) {
+@media (min-width: 900px) {
   .container {
     max-width: 1320px;  
   }
