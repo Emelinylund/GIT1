@@ -200,6 +200,8 @@ footer {
 
 #brands {
   display: none;
+  padding: 2rem;
+  padding-bottom: 2rem;
 }
 
 .brand-box {
