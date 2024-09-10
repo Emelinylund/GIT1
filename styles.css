@@ -180,10 +180,9 @@ header .container {
   padding-bottom: 0.5rem;
 }
 .hero-section {
-  text-align: right;
+  text-align: left; 
   padding: 192px 20px;
-  background: linear-gradient(to bottom, #6365f1, #db46ef, #f1f4fd);
-  
+  background: linear-gradient(to bottom, #f1f4fd83, #db46ef42, #6365f100 );
 }
 
 .hero-section h1 {
@@ -191,6 +190,7 @@ header .container {
   color: #333;
   margin-bottom: 20px;
   max-width: 350px;
+  margin-left: 600px;
 }
 
 .hero-section p {
@@ -198,6 +198,7 @@ header .container {
   color: #666;
   margin-bottom: 30px;
   max-width: 450px;
+  margin-left: 600px;
 }
 
 
