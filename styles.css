@@ -173,7 +173,7 @@ display: none;
 }
 
 .navbar {
-display: none;
+display: flex;
 }
 
 .nav-link {
