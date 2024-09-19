@@ -31,9 +31,8 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-
+/* Detta är alla länkar */
 a {
-
 color: var(--color-primary);
 text-decoration: none;
 }
@@ -42,24 +41,19 @@ a:hover {
   color: var(--color-primary);
   text-decoration: underline;
 }
-
+/* Detta är features-iconen */
 .nav-link {
   color: var(--color-dark);
   font-weight: 600;
   text-decoration: none;
   
 }
-
+/* Detta är när man för musen över ikonen */
 .nav-link:hover {
   color: var(--color-primary);
   text-decoration: underline;
 }
-
-.active {
-  color: var(--color-primary);
-  text-decoration: underline;
-}
-
+/* Detta är sign in knappen */
 .btn-primary {
   margin-left: auto;
   background-color: var(--color-primary);
@@ -76,16 +70,16 @@ background-color: var(--color-gray600);
 color: var(--color-white);
 text-decoration: none;
 }
-.btn-primary i {
+.btn-primary {
   margin-right: 0,5rem;
   }
 
-.btn-mobile {
-   backgrounc-color: transparent;
-   border: none;
-   font-size: 2rem; 
-}
-
+  .btn-mobile {
+    backgrounc-color: transparent;
+    border: none;
+    font-size: 2rem; 
+ }
+/* Detta är darkmode knappen */
 .btn-toggle-switch {
     display: flex;
     align-items: center;
@@ -150,18 +144,14 @@ text-decoration: none;
 .toggle-switch .slider.round:before {
     border-radius: 50%;
 }
-
+/* Detta är linjen längst upp på sidan */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 20rem;
 }
-  
- #auth-signin {
-    display: none;
- }
-
+/* Detta är apple dowloadappen */
 .btn-download-app {
   background-color: var(--color-dark);
   color: var(--color-white);
@@ -177,37 +167,38 @@ text-decoration: none;
   color: var(--color-white);
   text-decoration: none;
   }
-
-.btn-circle {
-  height: 44px;
-  width: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  border: 1px solid var(--color-border-gray600);
-  background-color: var(--color-white);
-  color: var(--color-dark);
-}
-
-footer {
-  font-size: 14px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  color: var(--color-gray600);
-
-  .container {
+/* Detta är cirkeln till discover more knappen */
+  .btn-circle {
+    height: 44px;
+    width: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
-
+    border-radius: 50%;
+    border: 1px solid var(--color-border-gray600);
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    
   }
-  .credit {
-    display: none;
+/* Detta är texten allra längst ner på sidan*/
+  footer {
+    font-size: 14px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--color-gray600);
+  
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+  
+    }
+    .credit {
+      display: none;
+    }
   }
-}
-
+/* Detta är alla logos på rad under hero*/
 #brands {
   display: none;
   padding: 6rem;
@@ -225,24 +216,18 @@ footer {
   align-items: center;
 }
 
-footer {
-  .credit {
-    display: block;
+
+#brands {
+  display: block;
+
+  .container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+
 }
-  #brands {
-    display: block;
-
-    .container2 {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-  }
 }
-
-
 
 @media (min-width: 1400px) {
   .container1 {
@@ -274,12 +259,12 @@ footer {
   
   
     display: inside;
-    gap: 2 rem;
+    gap: 2rem;
   
   @media (max-width: 1320px) {
     grid-template-rows: 1fr auto;
     grid-template-areas: "headline"
-    "content" "images";
+                         "content" "images";
   }
   
    }
@@ -321,7 +306,7 @@ footer {
   grid-row: 2;
   
   
-  @media (max-width: 1390px) {
+  @media (max-width: 1320px) {
     .discover-more {justify-content: flex-start;
   }
   }
@@ -337,8 +322,8 @@ footer {
   z-index: -10;
   bottom: 0;
   right: 240px;
-  
     }
+
     .img-front {
   position: absolute;
   z-index: -5;
