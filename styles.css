@@ -48,6 +48,7 @@ a:hover {
   color: var(--color-dark);
   font-weight: 600;
   text-decoration: none;
+  
 }
 
 .nav-link:hover {
@@ -61,6 +62,7 @@ a:hover {
 }
 
 .btn-primary {
+  margin-left: auto;
   background-color: var(--color-primary);
   color: var(--color-white);
   border-radius: 8px;
@@ -152,6 +154,9 @@ text-decoration: none;
 
 .navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20rem;
 }
   
  #auth-signin {
@@ -341,6 +346,57 @@ footer {
   bottom: 0;
   right: 1px
     }
+
+    .app-features {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem 0;
+    }
   
+    .app-features-content {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+    }
+    
+    .app-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    }
+    
+    .features-list {
+      max-width: 600px;
+    }
+    
+    .feature-items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .feature-item img {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .feature-item h3 {
+      font-size: 1.2rem;
+      color: #0B0F19;
+    }
+    
+    .feature-item p {
+      color: #6B7280;
+      font-size: 1rem;
+    }
+    
 
   }
