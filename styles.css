@@ -234,7 +234,7 @@ footer {
   #brands {
     display: block;
 
-    .container {
+    .container2 {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -246,7 +246,7 @@ footer {
 
 
 @media (min-width: 1400px) {
-  .container {
+  .container1 {
     max-width: 1320px;  
   }
 
@@ -263,10 +263,10 @@ footer {
 
 }
 
-#hero {
+#hero1 {
 
 
-  .container {
+  .container1 {
     display: flex;
   
     background: rgb(99,102,241);
