@@ -252,13 +252,15 @@ text-decoration: none;
 
   .container1 {
     display: flex;
+    
   
     background: rgb(99,102,241);
     background: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
     height: 70vh;
+    width: 100vw;
   
   
-    display: inside;
+    
     gap: 2rem;
   
   @media (max-width: 1320px) {
@@ -311,7 +313,7 @@ text-decoration: none;
   }
   }
    }
-  
+  /* Detta är mobilerna i hero*/
    .images{
     position: relative;
   grid-area: images;
@@ -321,14 +323,14 @@ text-decoration: none;
   position: absolute;
   z-index: -10;
   bottom: 0;
-  right: 240px;
+  right: 530px;
     }
 
     .img-front {
   position: absolute;
   z-index: -5;
   bottom: 0;
-  right: 1px
+  right: 300px
     }
 
     .app-features {
