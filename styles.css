@@ -338,13 +338,13 @@ text-decoration: none;
 .img-back {
   position: absolute;
   bottom: 0;
-  right: 50px; /* Justera detta värde för att hålla det inom viewport */
+  right: 200px; /* Justera detta värde för att hålla det inom viewport */
 }
 
 .img-front {
   position: absolute;
   bottom: 0;
-  right: 200px; /* Justera detta värde så att bilden passar */
+  right: 0px; /* Justera detta värde så att bilden passar */
 }
 
     .app-features {
