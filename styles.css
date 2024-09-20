@@ -248,90 +248,102 @@ text-decoration: none;
 }
 
 #hero1 {
-
+  background: linear-gradient(0deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
+  /* Applicera bakgrunden på hela hero-sektionen */
+  width: 100vw; /* Full bredd över hela viewporten */
+  display: flex;
+  justify-content: center;
 
   .container1 {
-    display: flex;
-    
-  
-    background: rgb(99,102,241);
-    background: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: rgb(99, 102, 241);
+    background: linear-gradient(0deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
     height: 70vh;
     width: 100vw;
-  
-  
-    
     gap: 2rem;
-  
-  @media (max-width: 1320px) {
-    grid-template-rows: 1fr auto;
-    grid-template-areas: "headline"
-                         "content" "images";
+    justify-items: center;  /* Centrerar innehållet horisontellt */
+    align-items: center;    /* Centrerar innehållet vertikalt */
+    place-items: center;    /* Centrerar allt inom grid-cellerna */
   }
-  
-   }
-  
-   .headline {
-    grid-area: headline;
-    text-align: left;
-  h1 {
+
+  @media (max-width: 1320px) {
+    .container1 {
+      grid-template-rows: 1fr auto;
+      grid-template-areas: 
+        "headline"
+        "content" 
+        "images";
+    }
+  }
+}
+
+.headline {
+  grid-area: headline;
+  text-align: left;
+  grid-column: span 1;
+}
+
+.headline h1 {
   font-size: 56px;
   font-weight: 800;
   max-width: 500px;
-  
-  @media {
+}
+
+@media (max-width: 1320px) {
+  .headline h1 {
     text-align: left;
   }
-  }
-   }
+}
 
-   .content {
-    p{
-      font-size: 18px;
-      margin-bottom: 3rem;
-      max-width: 450px;
-      }
+.content {
+  grid-area: content;
+}
 
-   }
+.content p {
+  font-size: 18px;
+  margin-bottom: 3rem;
+  max-width: 450px;
+}
 
-  .buttons {
+.buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
-  }
-  
-  .discover-more {
-    color: var(--color-dark);
+}
+
+.discover-more {
+  color: var(--color-dark);
   display: flex;
   align-items: center;
   gap: 1rem;
   grid-row: 2;
-  
-  
-  @media (max-width: 1320px) {
-    .discover-more {justify-content: flex-start;
-  }
-  }
-   }
-  /* Detta är mobilerna i hero*/
-   .images{
-    position: relative;
-  grid-area: images;
-   }
-  
-   .img-back {
-  position: absolute;
-  z-index: -10;
-  bottom: 0;
-  right: 530px;
-    }
+  margin-top: 12rem;
+}
 
-    .img-front {
+@media (max-width: 1320px) {
+  .discover-more {
+    justify-content: center;
+  }
+}
+
+/* Detta är mobilerna i hero */
+.images {
+  grid-column: 2; /* Lägger bilderna i den andra kolumnen */
+  position: relative;
+}
+
+.img-back {
   position: absolute;
-  z-index: -5;
   bottom: 0;
-  right: 300px
-    }
+  right: 50px; /* Justera detta värde för att hålla det inom viewport */
+}
+
+.img-front {
+  position: absolute;
+  bottom: 0;
+  right: 200px; /* Justera detta värde så att bilden passar */
+}
 
     .app-features {
       display: flex;
