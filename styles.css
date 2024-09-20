@@ -25,6 +25,7 @@ margin: 0;
 padding: 0;
 }
 
+
 body {
   font-family: "manrope", sans-serif;
   font-optical-sizing: auto;
@@ -253,6 +254,7 @@ text-decoration: none;
   width: 100vw; /* Full bredd över hela viewporten */
   display: flex;
   justify-content: center;
+  
 
   .container1 {
     display: grid;
