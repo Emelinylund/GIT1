@@ -430,12 +430,35 @@ text-decoration: none;
 }
  /* tre mobiler på rad */
  #page3 {
-  
+  width: 100vw;
+  height: 40vw;
+  background-color: var(--color-gray300) ;
    .text-item {
     display: flex;
     font-size: 25px;
-    margin-left: 45% 
-
+    margin-left: 43% 
+  }
+  #three-iphones {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr); /* tre kolumner, lika breda */
+  grid-gap: 7rem; /* Mellanrum mellan kolumner och rader */
+  padding: 2rem 0; /* Lite vertikalt utrymme runt om */
+  margin-left: 25%
+  }
+  #transactions {
+    #transfer {
+      display: grid;
+      font-size: 20px; 
+      margin-bottom: 6rem
+      
+     
+    }
+    p {
+      display: grid;
+      font-size: 15px;
+      
+      
+    }
   }
  }
 }
