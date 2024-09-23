@@ -376,12 +376,44 @@ text-decoration: none;
   
     }
 
-    #features-list {
-      display: block;
-      width: 40vw;
-      justify-content: end;
-      margin: 0;
-      padding: 0;
+   /* För containern som håller alla feature items */
+.feature-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Två kolumner, lika breda */
+  grid-gap: 2rem; /* Mellanrum mellan kolumner och rader */
+  padding: 2rem 0; /* Lite vertikalt utrymme runt om */
+  width 100%; /* Fyller hela bredden */
+  
+}
+
+/* För varje individuellt feature-item */
+.feature-item-li {
+  display: flex;
+  align-items: center; /* Justerar så att ikon och text linjeras upptill */
+  gap: 1rem; /* Avstånd mellan ikonen och texten */
+}
+
+/* Bakgrunden på ikonerna */
+.icon-holder {
+  background-color: #E2E5F1;
+  padding: 12px;
+  max-width: 53px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text-stil för varje feature */
+.text-item h4 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.text-item p {
+  margin: 0.5rem 0 0;
+  color: #9397AD;
+}
 
       #app-features {
         font-size: 3rem
@@ -391,22 +423,19 @@ text-decoration: none;
         color:#9397AD;
         width: 42rem
         
-      }
-
-     .feature-items {
-/* bakgrunden på ikonerna */ 
-      .icon-holder {
-        display: grid;
-        background-color: #E2E5F1;
-        padding: 12px;
-        max-width: 53px;
-        border-radius: 8px
-      }
-
-      .text-item {
-      
-     }
-  }
+      }  
+  
  }   
 
+}
+ /* tre mobiler på rad */
+ #page3 {
+  
+   .text-item {
+    display: flex;
+    font-size: 25px;
+    margin-left: 45% 
+
   }
+ }
+}
