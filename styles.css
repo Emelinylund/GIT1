@@ -54,9 +54,14 @@ a:hover {
   color: var(--color-primary);
   text-decoration: underline;
 }
+/* Detta är silicon-loggan */
+#logo {
+  padding-left: 18rem
+}
+
 /* Detta är sign in knappen */
 .btn-primary {
-  margin-left: auto;
+  margin-left: 20rem;
   background-color: var(--color-primary);
   color: var(--color-white);
   border-radius: 8px;
@@ -72,7 +77,7 @@ color: var(--color-white);
 text-decoration: none;
 }
 .btn-primary {
-  margin-right: 0,5rem;
+  margin-right: 14rem;
   }
 
   .btn-mobile {
@@ -85,6 +90,7 @@ text-decoration: none;
     display: flex;
     align-items: center;
     gap: 10px;
+    padding-left: 0rem;
 }
   
 .btn-toggle-switch .label {
@@ -148,7 +154,7 @@ text-decoration: none;
 /* Detta är linjen längst upp på sidan */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between
   align-items: center;
   padding: 1rem 20rem;
 }
@@ -202,7 +208,7 @@ text-decoration: none;
 /* Detta är alla logos på rad under hero*/
 #brands {
   display: none;
-  padding: 6rem;
+  padding: 1px;
   padding-bottom: 2rem;
   
 }
@@ -225,6 +231,8 @@ text-decoration: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 37rem;
+    padding-right: 36rem;
   }
 
 }
