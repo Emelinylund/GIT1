@@ -358,14 +358,15 @@ text-decoration: none;
  
  #page2 {
   #p2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Skapar tre lika stora kolumner */
+    gap: 1rem; /* Avstånd mellan grid-objekten */
     margin: auto;
     margin-bottom: 6rem;
     margin-top: 6rem;
-
+    width: 100%; /* Se till att grid fyller sitt container */
+    
+/* mobilen i features */
     #app-preview {
       display: block;
       height: auto;
@@ -388,25 +389,23 @@ text-decoration: none;
 
       .p1 {
         color:#9397AD;
+        width: 42rem
         
       }
 
-      .textpage {
-        #app-features {
-          align-self: start;
-          font-size: 2.5rem;
-
-        }
-
-        .lrg-p {
-          text-align: left;
-        }
+     .feature-items {
+/* bakgrunden på ikonerna */ 
+      .icon-holder {
+        display: grid;
+        background-color: #E2E5F1;
+        padding: 12px;
+        max-width: 53px;
+        border-radius: 8px
       }
-    }
 
-    .app-feature-container {
-      gap: 2rem;
-    }
+      .text-item {
+      
+     }
   }
  }   
 
