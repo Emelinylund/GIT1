@@ -61,11 +61,11 @@ a:hover {
 
 /* Detta är sign in knappen */
 .btn-primary {
-  margin-left: 20rem;
+  margin-left: 12rem;
   background-color: var(--color-primary);
   color: var(--color-white);
   border-radius: 8px;
-  padding: 12px 25px;
+  padding: 12px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,11 +90,11 @@ text-decoration: none;
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-left: 0rem;
+    padding-left: 1rem;
 }
   
 .btn-toggle-switch .label {
-  display: none;
+  display: flex;
  }
   
 .toggle-switch {
@@ -271,7 +271,7 @@ text-decoration: none;
     background: linear-gradient(0deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
     height: 70vh;
     width: 100vw;
-    gap: 2rem;
+    gap: 12rem;
     justify-items: center;  /* Centrerar innehållet horisontellt */
     align-items: center;    /* Centrerar innehållet vertikalt */
     place-items: center;    /* Centrerar allt inom grid-cellerna */
@@ -354,57 +354,60 @@ text-decoration: none;
   bottom: 0;
   right: 0px; /* Justera detta värde så att bilden passar */
 }
+/* app features sidan */
+ 
+ #page2 {
+  #p2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: auto;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
 
-    .app-features {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 4rem 0;
-    }
-  
-    .app-features-content {
-      display: flex;
-      align-items: center;
-      gap: 4rem;
-    }
-    
-    .app-image img {
-      max-width: 100%;
+    #app-preview {
+      display: block;
       height: auto;
-      border-radius: 16px;
-      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+      align-self: flex-end;
+      margin-left: 36rem
+
+  
     }
-    
-    .features-list {
-      max-width: 600px;
+
+    #features-list {
+      display: block;
+      width: 40vw;
+      justify-content: end;
+      margin: 0;
+      padding: 0;
+
+      #app-features {
+        font-size: 3rem
+      }
+
+      .p1 {
+        color:#9397AD;
+        
+      }
+
+      .textpage {
+        #app-features {
+          align-self: start;
+          font-size: 2.5rem;
+
+        }
+
+        .lrg-p {
+          text-align: left;
+        }
+      }
     }
-    
-    .feature-items {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+
+    .app-feature-container {
       gap: 2rem;
     }
-    
-    .feature-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-    }
-    
-    .feature-item img {
-      width: 50px;
-      height: 50px;
-    }
-    
-    .feature-item h3 {
-      font-size: 1.2rem;
-      color: #0B0F19;
-    }
-    
-    .feature-item p {
-      color: #6B7280;
-      font-size: 1rem;
-    }
-    
+  }
+ }   
 
   }
