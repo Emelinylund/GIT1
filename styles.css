@@ -560,11 +560,13 @@ text-decoration: none;
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+  
 }
 
 .p4-ul-2 .p4-li-2 img {
   width: 24px; /* Anpassa storleken på ikonerna */
   margin-right: 1rem;
+  background-color: #E2E5F1;
 }
 
 .p4-ul-2 .p4-li-2 p {
