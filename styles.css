@@ -81,7 +81,7 @@ text-decoration: none;
   }
 
   .btn-mobile {
-    backgrounc-color: transparent;
+    background-color: transparent;
     border: none;
     font-size: 2rem; 
  }
@@ -382,7 +382,7 @@ text-decoration: none;
   grid-template-columns: repeat(2, 1fr); /* Två kolumner, lika breda */
   grid-gap: 2rem; /* Mellanrum mellan kolumner och rader */
   padding: 2rem 0; /* Lite vertikalt utrymme runt om */
-  width 100%; /* Fyller hela bredden */
+  width: 55%; /* Fyller hela bredden */
   
 }
 
@@ -433,6 +433,7 @@ text-decoration: none;
   width: 100vw;
   height: 40vw;
   background-color: var(--color-gray300) ;
+  
    .text-item {
     display: flex;
     font-size: 25px;
@@ -451,14 +452,55 @@ text-decoration: none;
       font-size: 20px; 
       margin-bottom: 6rem
       
-     
     }
     p {
       display: grid;
       font-size: 15px;
-      
-      
+      align-items: center;
+      margin-top: 4rem;
+     
     }
   }
+ }
+
+ #page4 {
+  display: flex;
+  flex-wrap: wrap; /* Gör att barnen går till nästa rad vid behov */
+  justify-content: space-between; /* Fördelar elementen horisontellt */
+  align-items: flex-start; /* Justerar vertikalt */
+  gap: 2rem; /* Mellanrum mellan elementen */
+  max-width: 1200px; /* Maximalt bredd på layouten */
+  margin: 0 auto; /* Centrerar layouten horisontellt */
+  
+.item-left {
+  h2 {
+    font-size: 30px
+  }
+  p {
+    display: flex;
+    color: #9397AD
+  }
+  .p4-li-1 {
+    display: block;
+  }
+  .fa-regular {
+    display: flex; /* Använd Flexbox för att placera ikonen bredvid texten */
+    align-items: center; /* Vertikal centrering */
+    margin-bottom: 1rem;
+    color: var(--color-primary)
+  }
+  button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 6px;
+  border: none;
+  padding: 12px 30px;
+  font-family: "manrope", sans-serif;
+  }
+  button i {
+    margin-left: 10px; /* Mellanrum mellan texten och ikonen *
+  }
+}
+
  }
 }
