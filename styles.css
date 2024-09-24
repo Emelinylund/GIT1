@@ -236,7 +236,7 @@ text-decoration: none;
   }
 
 }
-}
+
 
 @media (min-width: 1400px) {
   .container1 {
@@ -444,7 +444,7 @@ text-decoration: none;
     grid-template-columns: repeat(3, 1fr); /* tre kolumner, lika breda */
   grid-gap: 7rem; /* Mellanrum mellan kolumner och rader */
   padding: 2rem 0; /* Lite vertikalt utrymme runt om */
-  margin-left: 25%
+  
   }
   #transactions {
     #transfer {
@@ -468,7 +468,7 @@ text-decoration: none;
   max-width: 1200px;
   margin: 0 auto;
   padding: 4rem 0;
-}
+
 
 .p4-flex {
   display: flex;
@@ -589,6 +589,27 @@ text-decoration: none;
 .p4-text button i {
   margin-left: 10px;
 }
+}
+#page3 {
+  width: 100vw;
+  height: 40vw;
+  background-color: var(--color-gray300) ;
+  
+   .text-item {
+    display: flex;
+    font-size: 25px;
+    margin-left: 43% 
+  }
+  #three-iphones {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr); /* tre kolumner, lika breda */
+  grid-gap: 7rem; /* Mellanrum mellan kolumner och rader */
+  padding: 2rem 0; /* Lite vertikalt utrymme runt om */
+  
+  } 
+ }
+
+
 
 
 
