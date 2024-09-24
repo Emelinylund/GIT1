@@ -462,45 +462,130 @@ text-decoration: none;
     }
   }
  }
-
- #page4 {
-  display: flex;
-  flex-wrap: wrap; /* Gör att barnen går till nästa rad vid behov */
-  justify-content: space-between; /* Fördelar elementen horisontellt */
-  align-items: flex-start; /* Justerar vertikalt */
-  gap: 2rem; /* Mellanrum mellan elementen */
-  max-width: 1200px; /* Maximalt bredd på layouten */
-  margin: 0 auto; /* Centrerar layouten horisontellt */
-  
-.item-left {
-  h2 {
-    font-size: 30px
-  }
-  p {
-    display: flex;
-    color: #9397AD
-  }
-  .p4-li-1 {
-    display: block;
-  }
-  .fa-regular {
-    display: flex; /* Använd Flexbox för att placera ikonen bredvid texten */
-    align-items: center; /* Vertikal centrering */
-    margin-bottom: 1rem;
-    color: var(--color-primary)
-  }
-  button {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  border-radius: 6px;
-  border: none;
-  padding: 12px 30px;
-  font-family: "manrope", sans-serif;
-  }
-  button i {
-    margin-left: 10px; /* Mellanrum mellan texten och ikonen *
-  }
+ 
+/* Sida 4 tog jag hjälp av chat gtp att få ihop tillsammans med egna försök */
+#page4 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 0;
 }
 
- }
+.p4-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Gör att raderna anpassar sig till mindre skärmar */
+}
+
+/* Vänstra textdelen */
+.item-left {
+  flex: 1;
+}
+
+.item-left h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.p4-ul-1 {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.p4-ul-1 .p4-li-1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.p4-ul-1 .p4-li-1 i {
+  color: var(--color-primary); /* Din primära färg */
+  margin-right: 1rem;
+}
+
+.p4-ul-1 .p4-li-1 p {
+  margin: 0;
+  color: #9397AD;
+}
+
+.item-left button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 30px;
+  font-family: "manrope", sans-serif;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.item-left button i {
+  margin-left: 10px;
+}
+
+/* Bildbehållare */
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Andra delen, text och bild */
+.p4-text {
+  flex: 1;
+}
+
+.p4-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.p4-ul-2 {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.p4-ul-2 .p4-li-2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.p4-ul-2 .p4-li-2 img {
+  width: 24px; /* Anpassa storleken på ikonerna */
+  margin-right: 1rem;
+}
+
+.p4-ul-2 .p4-li-2 p {
+  margin: 0;
+  color: #9397AD;
+}
+
+.p4-text button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 30px;
+  font-family: "manrope", sans-serif;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.p4-text button i {
+  margin-left: 10px;
+}
+
+
+
 }
