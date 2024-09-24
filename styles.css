@@ -462,7 +462,7 @@ text-decoration: none;
     }
   }
  }
- 
+
 /* Sida 4 tog jag hjälp av chat gtp att få ihop tillsammans med egna försök */
 #page4 {
   max-width: 1200px;
@@ -481,6 +481,7 @@ text-decoration: none;
 /* Vänstra textdelen */
 .item-left {
   flex: 1;
+  margin-right: 10rem
 }
 
 .item-left h2 {
@@ -498,6 +499,7 @@ text-decoration: none;
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+
 }
 
 .p4-ul-1 .p4-li-1 i {
