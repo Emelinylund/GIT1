@@ -32,6 +32,8 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+}
+
 /* Detta är alla länkar */
 a {
 color: var(--color-primary);
@@ -42,11 +44,21 @@ a:hover {
   color: var(--color-primary);
   text-decoration: underline;
 }
+#wrapper {
+  /* Detta är linjen längst upp på sidan */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20rem;
+}
+
 /* Detta är features-iconen */
 .nav-link {
   color: var(--color-dark);
   font-weight: 600;
   text-decoration: none;
+  margin-left: -20rem
   
 }
 /* Detta är när man för musen över ikonen */
@@ -61,7 +73,7 @@ a:hover {
 
 /* Detta är sign in knappen */
 .btn-primary {
-  margin-left: 12rem;
+  margin-left: 1rem;
   background-color: var(--color-primary);
   color: var(--color-white);
   border-radius: 8px;
@@ -151,13 +163,9 @@ text-decoration: none;
 .toggle-switch .slider.round:before {
     border-radius: 50%;
 }
-/* Detta är linjen längst upp på sidan */
-.navbar {
-  display: flex;
-  justify-content: space-between
-  align-items: center;
-  padding: 1rem 20rem;
 }
+
+
 /* Detta är apple dowloadappen */
 .btn-download-app {
   background-color: var(--color-dark);
@@ -696,4 +704,3 @@ text-decoration: none;
 
 
 
-}
