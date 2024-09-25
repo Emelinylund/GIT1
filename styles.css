@@ -461,12 +461,14 @@ text-decoration: none;
       font-size: 20px; 
       margin-bottom: 6rem
       
+      
     }
     p {
       display: grid;
       font-size: 15px;
       align-items: center;
       margin-top: 4rem;
+      margin-inline: center;
      
     }
   }
@@ -701,6 +703,159 @@ text-decoration: none;
   font-size: 0.9rem;
   color: #606060;
 }
+/* sista sidan*/
+
+body {
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.6;
+  color: #0B0F19;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+a {
+  color: #6366F1;
+  text-decoration: none;
+}
+
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* FAQ Section */
+#fpage6 {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.faq {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-left {
+  width: 40%;
+}
+
+.faq-right {
+  width: 55%;
+}
+
+.contact-options {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-option {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact-option i {
+  font-size: 2rem;
+  color: #6366F1;
+}
+
+.contact-option p {
+  margin: 1rem 0 0.5rem;
+}
+
+.accordion {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-item.open .accordion-content {
+  display: block;
+}
+
+.accordion-item .accordion-content {
+  display: none;
+}
+
+/* Newsletter Section */
+#newsletter-section {
+  background-color: #F3F4F6;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.newsletter-content {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-content i {
+  font-size: 2.5rem;
+  color: #FFB100;
+  margin-right: 1rem;
+}
+
+.newsletter-input {
+  display: flex;
+  gap: 1rem;
+}
+
+.newsletter-input input {
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.newsletter-input button {
+  padding: 1rem 2rem;
+  background-color: #6366F1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 
 
 
