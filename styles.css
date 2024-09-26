@@ -33,6 +33,37 @@ body {
   font-style: normal;
   font-size: 16px;
 }
+@media (min-width: 769px) {
+  .container1 {
+    max-width: 768px;  
+  }
+  .container2 {
+    max-width: 768px;  
+  }
+  .container3 {
+    max-width: 768px;  
+  }
+  .container4 {
+    max-width: 768px;  
+  }
+  .container5 {
+    max-width: 768px;  
+  }
+  .container6 {
+    max-width: 768px;  
+  }
+.navbar {
+  display: block;
+  }
+
+#auth-signin {
+  display: block;
+}
+.btn-mobile {
+  display: none;
+}
+
+}
 
 /* Detta är alla länkar */
 a {
@@ -246,24 +277,6 @@ text-decoration: none;
 }
 
 
-@media (min-width: 1400px) {
-  .container1 {
-    max-width: 1320px;  
-  }
-
-.navbar {
-  display: block;
-  }
-
-#auth-signin {
-  display: block;
-}
-.btn-mobile {
-  display: none;
-}
-
-}
-
 #hero1 {
   background: linear-gradient(0deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
   /* Applicera bakgrunden på hela hero-sektionen */
@@ -277,7 +290,7 @@ text-decoration: none;
     grid-template-columns: repeat(2, 1fr);
     background: rgb(99, 102, 241);
     background: linear-gradient(0deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
-    height: 70vh;
+    height: vh;
     width: 100vw;
     gap: 12rem;
     justify-items: center;  /* Centrerar innehållet horisontellt */
@@ -287,14 +300,13 @@ text-decoration: none;
 
   @media (max-width: 1320px) {
     .container1 {
-      grid-template-rows: 1fr auto;
+      grid-template-columns: 1fr 1fr;
       grid-template-areas: 
-        "headline"
-        "content" 
-        "images";
+        "headline content"
+         "images";
     }
   }
-}
+
 
 .headline {
   grid-area: headline;
@@ -308,7 +320,7 @@ text-decoration: none;
   max-width: 500px;
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 768px) {
   .headline h1 {
     text-align: left;
   }
@@ -361,6 +373,7 @@ text-decoration: none;
   position: absolute;
   bottom: 0;
   right: 0px; /* Justera detta värde så att bilden passar */
+}
 }
 /* app features sidan */
  
@@ -709,16 +722,21 @@ body {
   font-family: 'Manrope', sans-serif;
   line-height: 1.6;
   color: #0B0F19;
+  background-color: #F8FAFC; /* Ljusare bakgrund */
 }
 
 h2 {
   font-size: 2rem;
   font-weight: bold;
+  color: #0B0F19;
+  margin-bottom: 1rem;
 }
 
 h4 {
   font-size: 1rem;
   font-weight: bold;
+  color: #0B0F19;
+  margin: 0;
 }
 
 a {
@@ -726,32 +744,39 @@ a {
   text-decoration: none;
 }
 
-
-
 a:hover {
   text-decoration: underline;
 }
 
 /* FAQ Section */
-#fpage6 {
+#page6 {
   display: flex;
-  justify-content: space-between;
-  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  background-color: #FFFFFF;
 }
 
 .faq {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 2rem;
 }
 
 .faq-left {
   width: 40%;
 }
 
-.faq-right {
-  width: 55%;
+.faq-left h2 {
+  margin-bottom: 0.5rem;
+}
+
+.faq-left p {
+  font-size: 1rem;
+  color: #4B5563;
+  margin-bottom: 2rem;
 }
 
 .contact-options {
@@ -760,28 +785,53 @@ a:hover {
 }
 
 .contact-option {
-  background-color: #f7f7f7;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  text-align: left;
 }
 
-.contact-option i {
-  font-size: 2rem;
-  color: #6366F1;
+.contact-option img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 1rem;
 }
 
 .contact-option p {
-  margin: 1rem 0 0.5rem;
+  margin: 0;
+  font-size: 1rem;
+  color: #4B5563;
+}
+
+.contact-option a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.contact-option a i {
+  margin-left: 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* Accordion Styles */
+.faq-right {
+  width: 55%;
 }
 
 .accordion {
-  background-color: #f7f7f7;
-  border-radius: 8px;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .accordion-item {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .accordion-item:last-child {
@@ -791,12 +841,24 @@ a:hover {
 .accordion-title {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1.5rem;
   cursor: pointer;
+  color: #0B0F19;
+}
+
+.accordion-title h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.accordion-title img {
+  width: 16px;
+  height: 16px;
 }
 
 .accordion-content {
-  padding: 1rem;
+  padding: 1.5rem;
+  color: #4B5563;
 }
 
 .accordion-item.open .accordion-content {
@@ -810,7 +872,7 @@ a:hover {
 /* Newsletter Section */
 #newsletter-section {
   background-color: #F3F4F6;
-  padding: 2rem;
+  padding: 3rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -822,17 +884,28 @@ a:hover {
   align-items: center;
   max-width: 1000px;
   width: 100%;
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .newsletter-content {
   display: flex;
   align-items: center;
+  color: #0B0F19;
 }
 
-.newsletter-content i {
-  font-size: 2.5rem;
-  color: #FFB100;
+.newsletter-content img {
+  width: 40px;
+  height: 40px;
   margin-right: 1rem;
+}
+
+.newsletter-content h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #0B0F19;
 }
 
 .newsletter-input {
@@ -855,6 +928,7 @@ a:hover {
   border-radius: 8px;
   cursor: pointer;
 }
+
 
 
 
