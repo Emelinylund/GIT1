@@ -614,24 +614,7 @@ text-decoration: none;
   margin-left: 10px;
 }
 }
-#page3 {
-  width: 100vw;
-  height: 40vw;
-  background-color: var(--color-gray300) ;
-  
-   .text-item {
-    display: flex;
-    font-size: 25px;
-    margin-left: 43% 
-  }
-  #three-iphones {
-    display: flex;
-    grid-template-columns: repeat(3, 1fr); /* tre kolumner, lika breda */
-  grid-gap: 7rem; /* Mellanrum mellan kolumner och rader */
-  padding: 2rem 0; /* Lite vertikalt utrymme runt om */
-  
-  } 
- }
+
 /* sida 5 clients */
 
 #page5 {
@@ -660,11 +643,11 @@ text-decoration: none;
   margin-bottom: 2rem;
 }
 
-/* Rutnät  */
+
 .clients-grid {
   display: flex;
   flex: 2;
-  gap: 2rem;
+  gap: 4rem;
   justify-content: space-between;
 }
 
@@ -833,7 +816,7 @@ a:hover {
 .accordion {
   width: 100%;
   background-color: #FFFFFF;
-  border-radius: 16px; /* Mer rundade hörn för en modern look */
+  border-radius: 16px; /* Mer rundade hörn */
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
   
   
@@ -879,7 +862,6 @@ a:hover {
   color: #4B5563;
   border-top: 1px solid #e5e7eb;
   background-color: #F9FAFB; /* Ljusare bakgrund för kontrast */
-  transition: max-height 0.3s ease; /* Smooth transition när sektionen öppnas */
   max-height: 500px; /* Styr maxhöjden för animationen */
   overflow: hidden; /* För att hantera animationen */
 }
@@ -894,8 +876,8 @@ a:hover {
 }
 /* Lägger till en klass för knapparna */
 .accordion-title img {
-  width: 50px; /* Gör knapparna större */
-  height: 50px; 
+  width: 40px; /* Gör knapparna större */
+  height: 40px; 
   
 }
 
