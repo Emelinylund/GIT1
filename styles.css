@@ -33,7 +33,11 @@ body {
   font-style: normal;
   font-size: 16px;
 }
+
 @media (min-width: 769px) {
+  .navbar {
+    max-width: 768px;  
+  }
   .container1 {
     max-width: 768px;  
   }
@@ -89,7 +93,7 @@ a:hover {
   color: var(--color-dark);
   font-weight: 600;
   text-decoration: none;
-  margin-left: -20rem
+  margin-left: -10rem
   
 }
 /* Detta är när man för musen över ikonen */
@@ -120,7 +124,7 @@ color: var(--color-white);
 text-decoration: none;
 }
 .btn-primary {
-  margin-right: 14rem;
+  margin-left: 15rem;
   }
 
   .btn-mobile {
@@ -225,6 +229,7 @@ text-decoration: none;
     background-color: var(--color-white);
     color: var(--color-dark);
     
+    
   }
 /* Detta är texten allra längst ner på sidan*/
   footer {
@@ -256,7 +261,8 @@ text-decoration: none;
   border: 1px solid var(--color-gray300);
   border-radius: 8px;
   height: 100px;
-  width: 200px;
+  width: 400px;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,8 +276,9 @@ text-decoration: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 37rem;
-    padding-right: 36rem;
+    padding-left: 45rem;
+    
+    
   }
 
 }
@@ -279,7 +286,6 @@ text-decoration: none;
 
 #hero1 {
   background: linear-gradient(0deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
-  /* Applicera bakgrunden på hela hero-sektionen */
   width: 100vw; /* Full bredd över hela viewporten */
   display: flex;
   justify-content: center;
@@ -287,18 +293,15 @@ text-decoration: none;
 
   .container1 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background: rgb(99, 102, 241);
-    background: linear-gradient(0deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
-    height: vh;
-    width: 100vw;
-    gap: 12rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 4rem;
     justify-items: center;  /* Centrerar innehållet horisontellt */
     align-items: center;    /* Centrerar innehållet vertikalt */
     place-items: center;    /* Centrerar allt inom grid-cellerna */
   }
 
-  @media (max-width: 1320px) {
+  @media (max-width: 768px) {
     .container1 {
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 
@@ -351,7 +354,7 @@ text-decoration: none;
   margin-top: 12rem;
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 768px) {
   .discover-more {
     justify-content: center;
   }
@@ -361,6 +364,7 @@ text-decoration: none;
 .images {
   grid-column: 2; /* Lägger bilderna i den andra kolumnen */
   position: relative;
+  margin-left: 35rem;
 }
 
 .img-back {
