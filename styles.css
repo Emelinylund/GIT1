@@ -739,9 +739,16 @@ h4 {
   margin: 0;
 }
 
+p {
+  font-size: 14px
+}
+
 a {
   color: #6366F1;
   text-decoration: none;
+}
+#green {
+  color: #22C55E
 }
 
 a:hover {
@@ -753,7 +760,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 1rem;
+  padding: 4rem 1rem;
   background-color: #FFFFFF;
 }
 
@@ -762,11 +769,11 @@ a:hover {
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .faq-left {
-  width: 40%;
+  width: 37%;
 }
 
 .faq-left h2 {
@@ -801,7 +808,7 @@ a:hover {
 
 .contact-option p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 14px;
   color: #4B5563;
 }
 
@@ -826,12 +833,15 @@ a:hover {
 .accordion {
   width: 100%;
   background-color: #FFFFFF;
-  border-radius: 12px;
+  border-radius: 16px; /* Mer rundade hörn för en modern look */
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  
+  
 }
 
 .accordion-item {
   border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.3s ease; /* Smooth transition för hover-effekten */
 }
 
 .accordion-item:last-child {
@@ -841,41 +851,64 @@ a:hover {
 .accordion-title {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 1.25rem 1.5rem; /* Lättare padding för ett kompakt utseende */
   cursor: pointer;
   color: #0B0F19;
+  background-color: #FFFFFF;
+  transition: background-color 0.3s ease; /* Transition för hover-effekt */
+}
+
+.accordion-title:hover {
+  background-color: #F3F4F6; /* Ljusgrå hover-effekt */
 }
 
 .accordion-title h4 {
   font-size: 1rem;
   font-weight: bold;
+  margin: 0; /* Tar bort marginalen */
 }
 
 .accordion-title img {
   width: 16px;
   height: 16px;
+  
 }
 
 .accordion-content {
-  padding: 1.5rem;
+  padding: 1rem 1.5rem; /* Lättare padding för ett mer kompakt utseende */
   color: #4B5563;
+  border-top: 1px solid #e5e7eb;
+  background-color: #F9FAFB; /* Ljusare bakgrund för kontrast */
+  transition: max-height 0.3s ease; /* Smooth transition när sektionen öppnas */
+  max-height: 500px; /* Styr maxhöjden för animationen */
+  overflow: hidden; /* För att hantera animationen */
 }
 
 .accordion-item.open .accordion-content {
-  display: block;
+  max-height: 2000px; /* Tillräckligt stor för att täcka allt innehåll */
 }
 
 .accordion-item .accordion-content {
-  display: none;
+  max-height: 0; /* Gömmer innehållet */
+  display: block;
 }
+/* Lägger till en klass för knapparna */
+.accordion-title img {
+  width: 50px; /* Gör knapparna större */
+  height: 50px; 
+  
+}
+
+
 
 /* Newsletter Section */
 #newsletter-section {
-  background-color: #F3F4F6;
+  background-color: #E2E5F1;
   padding: 3rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .newsletter-container {
@@ -910,7 +943,7 @@ a:hover {
 
 .newsletter-input {
   display: flex;
-  gap: 1rem;
+  
 }
 
 .newsletter-input input {
