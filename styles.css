@@ -35,8 +35,7 @@ body {
 }
 
 @media (min-width: 769px) {
-  .navbar {
-    max-width: 768px;  
+  .navbar {  
   }
   .container1 {
     max-width: 768px;  
@@ -66,8 +65,9 @@ body {
 .btn-mobile {
   display: none;
 }
-
 }
+
+
 
 /* Detta är alla länkar */
 a {
@@ -249,39 +249,6 @@ text-decoration: none;
       display: none;
     }
   }
-/* Detta är alla logos på rad under hero*/
-#brands {
-  display: none;
-  padding: 1px;
-  padding-bottom: 2rem;
-  
-}
-
-.brand-box {
-  border: 1px solid var(--color-gray300);
-  border-radius: 8px;
-  height: 100px;
-  width: 400px;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-#brands {
-  display: block;
-
-  .container2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 45rem;
-    
-    
-  }
-
-}
 
 
 #hero1 {
@@ -379,8 +346,50 @@ text-decoration: none;
   right: 0px; /* Justera detta värde så att bilden passar */
 }
 }
-/* app features sidan */
- 
+
+/* Detta är alla logos på rad under hero*/
+
+
+
+.brand-box {
+  border: 1px solid var(--color-gray300);
+  border-radius: 8px;
+  height: 100px;
+  width: 400px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#brands {
+  display: block;
+
+  .container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 45rem; 
+  }
+
+}
+@media (max-width: 768px) {
+  .container2 {
+    flex-direction: column; /* Stapla elementen vertikalt på små desktops */
+    padding-left: 0; /* Ingen padding på små skärmar */
+    gap: 1rem;
+  }
+
+  .brand-box {
+    width: 100%; /* Använd hela skärmens bredd */
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 1rem; /* Mellanrum mellan boxarna */
+  }
+}
+
+ /* app features sidan */
  #page2 {
   #p2 {
     display: grid;
@@ -396,7 +405,7 @@ text-decoration: none;
       display: block;
       height: auto;
       align-self: flex-end;
-      margin-left: 36rem
+      margin-left: -15rem
 
   
     }
@@ -407,7 +416,7 @@ text-decoration: none;
   grid-template-columns: repeat(2, 1fr); /* Två kolumner, lika breda */
   grid-gap: 2rem; /* Mellanrum mellan kolumner och rader */
   padding: 2rem 0; /* Lite vertikalt utrymme runt om */
-  width: 55%; /* Fyller hela bredden */
+  width: %; /* Fyller hela bredden */
   
 }
 
@@ -446,7 +455,7 @@ text-decoration: none;
 
       .p1 {
         color:#9397AD;
-        width: 42rem
+        width: 44rem
         
       }  
   
@@ -455,41 +464,46 @@ text-decoration: none;
 }
  /* tre mobiler på rad */
  #page3 {
+  
   width: 100vw;
   height: 40vw;
-  background-color: var(--color-gray300) ;
+  background-color: var(--color-gray300);
   
-   .text-item {
+  .text-item {
+    h2 {
+    white-space: nowrap;  /* Förhindrar radbrytning och håller allt i samma rad */
     display: flex;
-    font-size: 25px;
-    margin-left: 43% 
+    font-size: 30px;
+    margin-left: 80rem;  
+    align-items: center; /* Vertikal centrering av texten */
+    justify-content: center; /* Om du vill att texten ska centreras horisontellt */
+    }
   }
+
   #three-iphones {
     display: flex;
-    grid-template-columns: repeat(3, 1fr); /* tre kolumner, lika breda */
-  grid-gap: 7rem; /* Mellanrum mellan kolumner och rader */
-  padding: 2rem 0; /* Lite vertikalt utrymme runt om */
-  margin-left: 40rem
-  
+    gap: 7rem; /* Mellanrum mellan iPhones */
+    padding: 2rem 0; /* Lite vertikalt utrymme runt om */
+    margin-left: 40rem;
   }
+
   #transactions {
     #transfer {
-      display: grid;
+      display: flex; /* Ändra till flex för horisontell layout */
       font-size: 20px; 
-      margin-bottom: 6rem
-      
-      
+      margin-bottom: 6rem;
+      gap: 1rem; /* Lägg till gap för mellanrum mellan texten */
     }
+    
     p {
-      display: grid;
       font-size: 15px;
       align-items: center;
       margin-top: 4rem;
-      margin-inline: center;
-     
+      text-align: center; /* Om du vill centrera texten */
     }
   }
- }
+}
+
 
 /* Sida 4 tog jag hjälp av chat gtp att få ihop tillsammans med egna försök */
 #page4 {
@@ -563,7 +577,7 @@ text-decoration: none;
 }
 
 .image-container img {
-  max-width: 100%;
+  max-width: 120%;
   height: auto;
   border-radius: 10px;
 }
@@ -571,6 +585,7 @@ text-decoration: none;
 /* Andra delen, text och bild */
 .p4-text {
   flex: 1;
+
 }
 
 .p4-text h2 {
@@ -616,6 +631,46 @@ text-decoration: none;
 
 .p4-text button i {
   margin-left: 10px;
+}
+/* Responsiv layout för små desktops (max-width: 768px) */
+@media (max-width: 768px) {
+  .p4-flex {
+    flex-direction: column; /* Ändra layout till kolumn för små skärmar */
+    align-items: flex-start; /* Justera layouten så att elementen inte är centrerade */
+  }
+
+  .item-left,
+  .p4-text {
+    width: 100%; /* Låt varje sektion ta upp 100% av bredden */
+    margin-right: 0;
+  }
+
+  .image-container {
+    margin-top: 2rem; /* Ge bildbehållaren utrymme över och under */
+  }
+
+  .item-left h2,
+  .p4-text h2 {
+    font-size: 1.5rem; /* Ytterligare minskning av textstorlek */
+  }
+
+  .p4-ul-1 .p4-li-1,
+  .p4-ul-2 .p4-li-2 {
+    flex-direction: column; /* Ändra layout till kolumn för listor */
+    align-items: flex-start;
+  }
+
+  .p4-ul-1 .p4-li-1 p,
+  .p4-ul-2 .p4-li-2 p {
+    text-align: left;
+  }
+
+  .item-left button,
+  .p4-text button {
+    width: 100%; /* Gör knapparna fullbredd för små skärmar */
+    padding: 10px 0;
+    justify-content: center;
+  }
 }
 }
 
