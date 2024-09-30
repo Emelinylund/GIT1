@@ -34,26 +34,33 @@ body {
   font-size: 16px;
 }
 
-@media (min-width: 769px) {
-  .navbar {  
+@media (min-width: 768px) {
+
+  .navbar {
+    max-width: 720px;
   }
+
+  .nav-bar {
+    max-width: 720px;
+  }
+  
   .container1 {
-    max-width: 768px;  
+    max-width: 720px;  
   }
   .container2 {
-    max-width: 768px;  
+    max-width: 720px;  
   }
   .container3 {
-    max-width: 768px;  
+    max-width: 720px;  
   }
   .container4 {
-    max-width: 768px;  
+    max-width: 720px;  
   }
   .container5 {
-    max-width: 768px;  
+    max-width: 720px;  
   }
   .container6 {
-    max-width: 768px;  
+    max-width: 720px;  
   }
 .navbar {
   display: block;
@@ -79,14 +86,16 @@ a:hover {
   color: var(--color-primary);
   text-decoration: underline;
 }
-#wrapper {
-  /* Detta är linjen längst upp på sidan */
-.navbar {
+ /* Detta är linjen längst upp på sidan */
+ .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 20rem;
 }
+
+
+#wrapper {
 
 /* Detta är features-iconen */
 .nav-link {
@@ -876,14 +885,22 @@ a:hover {
   width: 100%;
   background-color: #FFFFFF;
   border-radius: 16px; /* Mer rundade hörn */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
-  
-  
+  box-shadow: none; /* Tar bort skugga från hela accordionen */
 }
 
 .accordion-item {
-  border-bottom: 1px solid #e5e7eb;
-  transition: background-color 0.3s ease; /* Smooth transition för hover-effekten */
+  border: 1px solid #ddd; /* Lägger till en kant runt varje item */
+  border-radius: 5px; /* Rundade hörn på varje item */
+  margin-bottom: 10px; /* Lägger till mellanrum mellan varje item */
+  padding: 10px; /* Lätt padding */
+  background-color: #FFFFFF; /* Ljus bakgrundsfärg */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Skugga på utsidan */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition för hover-effekten */
+}
+
+.accordion-item:hover {
+  background-color: #F3F4F6; /* Ljusgrå hover-effekt */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Förstärkt skugga vid hover */
 }
 
 .accordion-item:last-child {
@@ -893,6 +910,7 @@ a:hover {
 .accordion-title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1.25rem 1.5rem; /* Lättare padding för ett kompakt utseende */
   cursor: pointer;
   color: #0B0F19;
@@ -911,16 +929,15 @@ a:hover {
 }
 
 .accordion-title img {
-  width: 16px;
-  height: 16px;
-  
+  width: 40px; /* Gör knapparna större */
+  height: 40px; 
 }
 
 .accordion-content {
   padding: 1rem 1.5rem; /* Lättare padding för ett mer kompakt utseende */
   color: #4B5563;
-  border-top: 1px solid #e5e7eb;
-  background-color: #F9FAFB; /* Ljusare bakgrund för kontrast */
+  border-top: 1px solid #FFFFFF;
+  background-color: #FFFFFF; /* Ljusare bakgrund för kontrast */
   max-height: 500px; /* Styr maxhöjden för animationen */
   overflow: hidden; /* För att hantera animationen */
 }
@@ -933,12 +950,8 @@ a:hover {
   max-height: 0; /* Gömmer innehållet */
   display: block;
 }
-/* Lägger till en klass för knapparna */
-.accordion-title img {
-  width: 40px; /* Gör knapparna större */
-  height: 40px; 
-  
-}
+
+
 
 
 
