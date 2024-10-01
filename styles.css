@@ -106,7 +106,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 20rem;
+  
 }
 
 #wrapper {
@@ -116,7 +116,7 @@ a:hover {
   color: var(--color-dark);
   font-weight: 600;
   text-decoration: none;
-  margin-left: 10rem
+  margin-left: 5rem
   
 }
 /* Detta är när man för musen över ikonen */
@@ -131,7 +131,6 @@ a:hover {
 
 /* Detta är sign in knappen */
 .btn-primary {
-  margin-left: 1rem;
   background-color: var(--color-primary);
   color: var(--color-white);
   border-radius: 8px;
@@ -379,7 +378,8 @@ text-decoration: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 45rem; 
+    padding-left: 18rem; 
+    padding-top: 2rem;
   }
 
 }
@@ -395,6 +395,7 @@ text-decoration: none;
     height: auto;
     padding: 1rem;
     margin-bottom: 1rem; /* Mellanrum mellan boxarna */
+    margin: 2rem;
   }
 }
 
@@ -478,7 +479,7 @@ text-decoration: none;
   flex-direction: column;
   justify-content: center;  /* Vertikal centrering */
   align-items: center;      /* Horisontell centrering */
-  height: 100vh; 
+  height: 100%; 
   padding: 2rem 0;
   text-align: center;
   background-color: #E2E5F1;
@@ -640,7 +641,7 @@ text-decoration: none;
 /* Andra delen, text och bild */
 .p4-text {
   flex: 1;
-  margin-left: 10rem;
+  
 }
 
 .p4-text h2 {
