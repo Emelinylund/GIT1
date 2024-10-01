@@ -25,6 +25,21 @@ margin: 0;
 padding: 0;
 }
 
+img {
+  /* width: 100%; */
+  display: block;
+}
+
+.flex {
+  display: flex;
+  gap: 2rem;
+}
+
+.content {
+ flex: 1;
+}
+
+
 
 body {
   font-family: "manrope", sans-serif;
@@ -94,7 +109,6 @@ a:hover {
   padding: 1rem 20rem;
 }
 
-
 #wrapper {
 
 /* Detta är features-iconen */
@@ -102,7 +116,7 @@ a:hover {
   color: var(--color-dark);
   font-weight: 600;
   text-decoration: none;
-  margin-left: -10rem
+  margin-left: 10rem
   
 }
 /* Detta är när man för musen över ikonen */
@@ -122,18 +136,21 @@ a:hover {
   color: var(--color-white);
   border-radius: 8px;
   padding: 12px 20px;
-  display: flex;
+  display: inline-flex; /* Använd inline-flex för att inte ta upp full bredd */
+  flex-direction: row; /* Se till att barnen ligger vågrätt */
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  white-space: nowrap; /* Förhindra att texten bryts till nästa rad */
 }
+
 .btn-primary:hover {
 background-color: var(--color-gray600);
 color: var(--color-white);
 text-decoration: none;
 }
 .btn-primary {
-  margin-left: 15rem;
+  margin-left: 10rem;
   }
 
   .btn-mobile {
@@ -147,6 +164,7 @@ text-decoration: none;
     align-items: center;
     gap: 10px;
     padding-left: 1rem;
+    margin-left: 30rem;
 }
   
 .btn-toggle-switch .label {
@@ -239,24 +257,6 @@ text-decoration: none;
     color: var(--color-dark);
     
     
-  }
-/* Detta är texten allra längst ner på sidan*/
-  footer {
-    font-size: 14px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    color: var(--color-gray600);
-  
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 5px;
-  
-    }
-    .credit {
-      display: none;
-    }
   }
 
 
@@ -383,7 +383,7 @@ text-decoration: none;
   }
 
 }
-@media (max-width: 768px) {
+@media (max-width: 720px) {
   .container2 {
     flex-direction: column; /* Stapla elementen vertikalt på små desktops */
     padding-left: 0; /* Ingen padding på små skärmar */
@@ -472,71 +472,118 @@ text-decoration: none;
 
 }
  /* tre mobiler på rad */
- #page3 {
-  
-  width: 100vw;
-  height: 40vw;
-  background-color: var(--color-gray300);
-  
-  .text-item {
-    h2 {
-    white-space: nowrap;  /* Förhindrar radbrytning och håller allt i samma rad */
-    display: flex;
-    font-size: 30px;
-    margin-left: 80rem;  
-    align-items: center; /* Vertikal centrering av texten */
-    justify-content: center; /* Om du vill att texten ska centreras horisontellt */
-    }
-  }
+/* Container för hela sektionen */
+#page3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Vertikal centrering */
+  align-items: center;      /* Horisontell centrering */
+  height: 100vh; 
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #E2E5F1;
+}
 
+/* Titel */
+#page3 .text-item h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+/* Flexbox för att placera bilderna horisontellt */
+#three-iphones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Individuella bildbehållare */
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%; /* Anpassar bredden */
+  height: auto; /* Bevarar proportionerna */
+}
+
+/* Text och beskrivning efter bilderna */
+#transactions {
+  margin-top: 1rem;
+}
+
+#transactions h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+#transactions p {
+  color: #606060;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto; /* Centrerar texten */
+}
+
+/* Responsiv design */
+@media (max-width: 720px) {
   #three-iphones {
-    display: flex;
-    gap: 7rem; /* Mellanrum mellan iPhones */
-    padding: 2rem 0; /* Lite vertikalt utrymme runt om */
-    margin-left: 40rem;
+    flex-direction: column; /* Byter till vertikal layout på mindre skärmar */
   }
 
-  #transactions {
-    #transfer {
-      display: flex; /* Ändra till flex för horisontell layout */
-      font-size: 20px; 
-      margin-bottom: 6rem;
-      gap: 1rem; /* Lägg till gap för mellanrum mellan texten */
-    }
-    
-    p {
-      font-size: 15px;
-      align-items: center;
-      margin-top: 4rem;
-      text-align: center; /* Om du vill centrera texten */
-    }
+  #page3 .text-item h2 {
+    font-size: 1.5rem;
+  }
+
+  #transactions h3 {
+    font-size: 1.2rem;
+  }
+
+  #transactions p {
+    font-size: 0.9rem;
   }
 }
 
 
-/* Sida 4 tog jag hjälp av chat gtp att få ihop tillsammans med egna försök */
-#page4 {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4rem 0;
 
+
+/* Sida 4 tog jag hjälp av chat gtp att få ihop tillsammans med egna försök */
+
+#page4 {
+  max-width: 720px;
+  margin: auto;
+  padding: 4rem 0;
+  white-space: nowrap;
+ 
+}
 
 .p4-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  flex-wrap: wrap; /* Gör att raderna anpassar sig till mindre skärmar */
+  flex-wrap: wrap; /* Gör att raderna anpassar sig till mindre skärmar */ 
+}
+
+.item-left, 
+.image-container, 
+.p4-text {
+  flex: 1 1 50%; /* Flexibel basstorlek på 50% för att text och bild tar lika mycket plats */
+  min-width: 0; /* Förhindra att flex-elementen blir för små */
 }
 
 /* Vänstra textdelen */
 .item-left {
-  flex: 1;
-  margin-right: 10rem
+  margin-left: -15rem;
 }
 
 .item-left h2 {
-  font-size: 2rem;
+  font-size: 32px;
   margin-bottom: 1.5rem;
 }
 
@@ -550,7 +597,6 @@ text-decoration: none;
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
-
 }
 
 .p4-ul-1 .p4-li-1 i {
@@ -586,19 +632,19 @@ text-decoration: none;
 }
 
 .image-container img {
-  max-width: 120%;
-  height: auto;
-  border-radius: 10px;
+    max-width: 100%; /* Begränsa bildstorleken till att hålla sig inom förälderns bredd */
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Andra delen, text och bild */
 .p4-text {
   flex: 1;
-
+  margin-left: 10rem;
 }
 
 .p4-text h2 {
-  font-size: 2rem;
+  font-size: 32px;
   margin-bottom: 1.5rem;
 }
 
@@ -612,7 +658,6 @@ text-decoration: none;
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
-  
 }
 
 .p4-ul-2 .p4-li-2 img {
@@ -641,16 +686,18 @@ text-decoration: none;
 .p4-text button i {
   margin-left: 10px;
 }
-/* Responsiv layout för små desktops (max-width: 768px) */
-@media (max-width: 768px) {
+
+
+@media (max-width: 720px) {
   .p4-flex {
     flex-direction: column; /* Ändra layout till kolumn för små skärmar */
     align-items: flex-start; /* Justera layouten så att elementen inte är centrerade */
   }
 
-  .item-left,
-  .p4-text {
-    width: 100%; /* Låt varje sektion ta upp 100% av bredden */
+  .item-left, 
+  .p4-text, 
+  .image-container {
+    width: 100%; /* Låt varje sektion ta upp 100% av bredden på små skärmar */
     margin-right: 0;
   }
 
@@ -658,30 +705,30 @@ text-decoration: none;
     margin-top: 2rem; /* Ge bildbehållaren utrymme över och under */
   }
 
-  .item-left h2,
+  .item-left h2, 
   .p4-text h2 {
     font-size: 1.5rem; /* Ytterligare minskning av textstorlek */
   }
 
-  .p4-ul-1 .p4-li-1,
+  .p4-ul-1 .p4-li-1, 
   .p4-ul-2 .p4-li-2 {
     flex-direction: column; /* Ändra layout till kolumn för listor */
     align-items: flex-start;
   }
 
-  .p4-ul-1 .p4-li-1 p,
+  .p4-ul-1 .p4-li-1 p, 
   .p4-ul-2 .p4-li-2 p {
     text-align: left;
   }
 
-  .item-left button,
+  .item-left button, 
   .p4-text button {
     width: 100%; /* Gör knapparna fullbredd för små skärmar */
     padding: 10px 0;
     justify-content: center;
   }
 }
-}
+
 
 /* sida 5 clients */
 
@@ -892,15 +939,15 @@ a:hover {
   border: 1px solid #ddd; /* Lägger till en kant runt varje item */
   border-radius: 5px; /* Rundade hörn på varje item */
   margin-bottom: 10px; /* Lägger till mellanrum mellan varje item */
-  padding: 10px; /* Lätt padding */
+  padding: 10px; 
   background-color: #FFFFFF; /* Ljus bakgrundsfärg */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Skugga på utsidan */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition för hover-effekten */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .accordion-item:hover {
-  background-color: #F3F4F6; /* Ljusgrå hover-effekt */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Förstärkt skugga vid hover */
+  background-color: #F3F4F6; 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); 
 }
 
 .accordion-item:last-child {
@@ -911,21 +958,21 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem 1.5rem; /* Lättare padding för ett kompakt utseende */
+  padding: 1.25rem 1.5rem; 
   cursor: pointer;
   color: #0B0F19;
   background-color: #FFFFFF;
-  transition: background-color 0.3s ease; /* Transition för hover-effekt */
+  transition: background-color 0.3s ease; 
 }
 
 .accordion-title:hover {
-  background-color: #F3F4F6; /* Ljusgrå hover-effekt */
+  background-color: #F3F4F6; 
 }
 
 .accordion-title h4 {
   font-size: 1rem;
   font-weight: bold;
-  margin: 0; /* Tar bort marginalen */
+  margin: 0; 
 }
 
 .accordion-title img {
@@ -934,12 +981,12 @@ a:hover {
 }
 
 .accordion-content {
-  padding: 1rem 1.5rem; /* Lättare padding för ett mer kompakt utseende */
+  padding: 1rem 1.5rem; 
   color: #4B5563;
   border-top: 1px solid #FFFFFF;
-  background-color: #FFFFFF; /* Ljusare bakgrund för kontrast */
+  background-color: #FFFFFF; 
   max-height: 500px; /* Styr maxhöjden för animationen */
-  overflow: hidden; /* För att hantera animationen */
+  overflow: hidden; 
 }
 
 .accordion-item.open .accordion-content {
@@ -950,9 +997,6 @@ a:hover {
   max-height: 0; /* Gömmer innehållet */
   display: block;
 }
-
-
-
 
 
 /* Newsletter Section */
@@ -1016,7 +1060,24 @@ a:hover {
   cursor: pointer;
 }
 
+/* Detta är texten allra längst ner på sidan*/
+footer {
+  font-size: 14px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--color-gray600);
 
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+  }
+  .credit {
+    display: none;
+  }
+}
 
 
 
