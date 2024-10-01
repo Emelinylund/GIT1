@@ -405,7 +405,7 @@ text-decoration: none;
   #p2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Skapar tre lika stora kolumner */
-    gap: 1rem; /* Avstånd mellan grid-objekten */
+    gap: 10rem; /* Avstånd mellan grid-objekten */
     margin: auto;
     margin-bottom: 6rem;
     margin-top: 6rem;
