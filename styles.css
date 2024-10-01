@@ -126,7 +126,7 @@ a:hover {
 }
 /* Detta är silicon-loggan */
 #logo {
-  padding-left: 18rem
+  padding-left: 10rem
 }
 
 /* Detta är sign in knappen */
@@ -378,8 +378,9 @@ text-decoration: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 18rem; 
+    padding-left: 8rem; 
     padding-top: 2rem;
+    gap: 1rem;
   }
 
 }
