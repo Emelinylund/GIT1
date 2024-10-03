@@ -536,7 +536,7 @@ text-decoration: none;
 
 #transactions p {
   color: #565973;
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.6;
   max-width: 500px;
   margin: 0 auto; /* Centrerar texten */
@@ -587,7 +587,6 @@ text-decoration: none;
 .item-left, 
 .image-container, 
 .p4-text {
-  flex: 1 1 50%; /* Flexibel basstorlek på 50% för att text och bild tar lika mycket plats */
   min-width: 0; /* Förhindra att flex-elementen blir för små */
 }
 
