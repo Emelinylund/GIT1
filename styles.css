@@ -154,7 +154,7 @@ color: var(--color-white);
 text-decoration: none;
 }
 .btn-primary {
-  margin-left: 10rem;
+  margin-left: 1rem;
   }
 
   .btn-mobile {
@@ -334,6 +334,7 @@ text-decoration: none;
   gap: 1rem;
   grid-row: 2;
   margin-top: 12rem;
+  margin-bottom: 4rem;
 }
 
 @media (max-width: 768px) {
@@ -1040,7 +1041,7 @@ a:hover {
 }
 
 .newsletter-content img {
-  width: 40px;
+  width: 40;
   height: 40px;
   margin-right: 1rem;
 }
@@ -1059,7 +1060,7 @@ a:hover {
 .newsletter-input input {
   padding: 1rem;
   border: 1px solid #d1d5db;
-  border-radius: 8px;
+  border-radius: 4px;
   width: 300px;
   padding-left: 30px;
 }
@@ -1069,7 +1070,7 @@ a:hover {
   background-color: #6366F1;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
 }
 /* Styling för kuvertikonen */
@@ -1089,7 +1090,7 @@ a:hover {
 
 /* Detta är texten allra längst ner på sidan*/
 footer {
-  font-size: 14px;
+  font-size: 12px;
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: var(--color-gray600);
