@@ -111,6 +111,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
+  margin: 1rem 6rem
   
 }
 
@@ -139,7 +140,7 @@ a:hover {
   background-color: var(--color-primary);
   color: var(--color-white);
   border-radius: 8px;
-  padding: 12px 20px;
+  padding: 8px 20px;
   display: inline-flex; /* Använd inline-flex för att inte ta upp full bredd */
   flex-direction: row; /* Se till att barnen ligger vågrätt */
   justify-content: center;
