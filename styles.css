@@ -30,7 +30,6 @@ padding: 0;
 }
 
 img {
-  /* width: 100%; */
   display: block;
 }
 
@@ -278,9 +277,9 @@ text-decoration: none;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 4rem;
-    justify-items: center;  /* Centrerar innehållet horisontellt */
-    align-items: center;    /* Centrerar innehållet vertikalt */
-    place-items: center;    /* Centrerar allt inom grid-cellerna */
+    justify-items: center; 
+    align-items: center;    
+    place-items: center;    
   }
 
   @media (max-width: 768px) {
@@ -354,13 +353,13 @@ text-decoration: none;
 .img-back {
   position: absolute;
   bottom: 0;
-  right: 230px; /* Justera detta värde för att hålla det inom viewport */
+  right: 230px; 
 }
 
 .img-front {
   position: absolute;
   bottom: 0;
-  right: 0px; /* Justera detta värde så att bilden passar */
+  right: 0px; 
 }
 }
 
@@ -396,7 +395,7 @@ text-decoration: none;
 @media (max-width: 720px) {
   .container2 {
     flex-direction: column; /* Stapla elementen vertikalt på små desktops */
-    padding-left: 0; /* Ingen padding på små skärmar */
+    padding-left: 0; 
     gap: 1rem;
   }
 
@@ -414,7 +413,7 @@ text-decoration: none;
   #p2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Skapar tre lika stora kolumner */
-    gap: 10rem; /* Avstånd mellan grid-objekten */
+    gap: 10rem; 
     margin: auto;
     margin-bottom: 6rem;
     margin-top: 6rem;
@@ -433,18 +432,18 @@ text-decoration: none;
    /* För containern som håller alla feature items */
 .feature-items {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Två kolumner, lika breda */
-  grid-gap: 2rem; /* Mellanrum mellan kolumner och rader */
-  padding: 2rem 0; /* Lite vertikalt utrymme runt om */
-  width: %; /* Fyller hela bredden */
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 2rem; 
+  padding: 2rem 0; 
+  width: 100%; 
   
 }
 
 /* För varje individuellt feature-item */
 .feature-item-li {
   display: flex;
-  align-items: center; /* Justerar så att ikon och text linjeras upptill */
-  gap: 1rem; /* Avstånd mellan ikonen och texten */
+  align-items: center; 
+  gap: 1rem; 
 }
 
 /* Bakgrunden på ikonerna */
@@ -484,7 +483,7 @@ text-decoration: none;
 
 }
  /* tre mobiler på rad */
-/* Container för hela sektionen */
+
 #page3 {
   display: flex;
   flex-direction: column;
@@ -496,14 +495,14 @@ text-decoration: none;
   background-color: #F3F6FF;
 }
 
-/* Titel */
+
 #page3 .text-item h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #000;
 }
 
-/* Flexbox för att placera bilderna horisontellt */
+
 #three-iphones {
   display: flex;
   justify-content: center;
@@ -520,7 +519,7 @@ text-decoration: none;
 
 .image-container img {
   max-width: 100%; /* Anpassar bredden */
-  height: auto; /* Bevarar proportionerna */
+  height: auto; 
 }
 
 /* Text och beskrivning efter bilderna */
@@ -545,7 +544,7 @@ text-decoration: none;
 /* Responsiv design */
 @media (max-width: 720px) {
   #three-iphones {
-    flex-direction: column; /* Byter till vertikal layout på mindre skärmar */
+    flex-direction: column;
   }
 
   #page3 .text-item h2 {
@@ -623,7 +622,7 @@ text-decoration: none;
 }
 
 .p4-ul-1 .p4-li-1 i {
-  color: var(--color-primary); /* Din primära färg */
+  color: var(--color-primary);
   margin-right: 1rem;
 }
 
@@ -716,7 +715,7 @@ text-decoration: none;
 @media (max-width: 720px) {
   .p4-flex {
     flex-direction: column; /* Ändra layout till kolumn för små skärmar */
-    align-items: flex-start; /* Justera layouten så att elementen inte är centrerade */
+    align-items: flex-start; 
   }
 
   .item-left, 
@@ -727,12 +726,12 @@ text-decoration: none;
   }
 
   .image-container {
-    margin-top: 2rem; /* Ge bildbehållaren utrymme över och under */
+    margin-top: 2rem; 
   }
 
   .item-left h2, 
   .p4-text h2 {
-    font-size: 1.5rem; /* Ytterligare minskning av textstorlek */
+    font-size: 1.5rem; 
   }
 
   .p4-ul-1 .p4-li-1, 
@@ -748,7 +747,7 @@ text-decoration: none;
 
   .item-left button, 
   .p4-text button {
-    width: 100%; /* Gör knapparna fullbredd för små skärmar */
+    width: 100%; 
     padding: 10px 0;
     justify-content: center;
   }
@@ -961,11 +960,11 @@ a:hover {
 }
 
 .accordion-item {
-  border: 1px solid #ddd; /* Lägger till en kant runt varje item */
-  border-radius: 5px; /* Rundade hörn på varje item */
-  margin-bottom: 10px; /* Lägger till mellanrum mellan varje item */
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  margin-bottom: 10px; 
   padding: 1px; 
-  background-color: #FFFFFF; /* Ljus bakgrundsfärg */
+  background-color: #FFFFFF; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Skugga på utsidan */
   transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
@@ -1010,7 +1009,7 @@ a:hover {
   color: #4B5563;
   border-top: 1px solid #FFFFFF;
   background-color: #FFFFFF; 
-  max-height: 500px; /* Styr maxhöjden för animationen */
+  max-height: 500px; 
   overflow: hidden; 
 }
 
@@ -1055,7 +1054,7 @@ a:hover {
 .newsletter-content img {
   width: 40;
   height: 40px;
-  margin-right: 1rem;
+  margin-right: 3rem;
 }
 
 .newsletter-content h3 {
