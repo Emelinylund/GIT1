@@ -1139,6 +1139,7 @@ footer {
 .contact-info {
   width: 35%;
   margin-left: 4rem;
+  margin-top: 3rem;
 }
 
 .contact-info ul {
@@ -1148,6 +1149,7 @@ footer {
 .contact-holder-li {
   display: flex;
   margin-bottom: 20px;
+  margin-top: 4rem;
 }
 
 .contact-holder img {
@@ -1171,9 +1173,14 @@ footer {
   color: #666;
 }
 
+.bold-text {
+  color: #000; /* Här kan du ändra färgen till vad du vill */
+}
+
 .contact-details a {
   display: flex;
   align-items: center;
+  margin-top: 2rem;
   color: #6c63ff;
   font-weight: bold;
   text-decoration: none;
@@ -1185,14 +1192,14 @@ footer {
 
 /* Form Section */
 .contact-form {
-  width: 35%;
+  width: 40%;
   background-color: #fff;
-  padding: 60px 30px;
+  padding: 90px 70px;
   margin-right: 8.5rem;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative; /* Add relative positioning */
-  top: 60px; /* Adjust this value to control how far down the form is moved */
+  top: 90px; /* Adjust this value to control how far down the form is moved */
   z-index: 1; /* Ensure the form is in front of other elements */
 }
 
