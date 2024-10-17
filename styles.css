@@ -2,7 +2,7 @@
 
 :root {
 
---color-dark: #0B0F19;
+--color-black: #0B0F19;
 --color-primary: #6366F1;
 --color-gray600: #9397AD;
 --color-white: #FFFFFF;
@@ -18,6 +18,17 @@
 
 }
 
+.dark-theme {
+  --color-black: #FFFFFF;
+  --color-white: #0B0F19; 
+  --color-gray600 :#FFFFFF ;
+--color-gray300: #FFFFFF;
+--color-gray100: #FFFFFF;
+--color-gray700: #FFFFFF;
+--color-gray500: #FFFFFF;
+
+}
+
 *  {
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -27,6 +38,8 @@ body, section, div, header, footer, main, aside, nav, blockquote, p, span {
 
 margin: 0;
 padding: 0;
+
+
 }
 
 img {
@@ -118,7 +131,7 @@ a:hover {
 
 /* Detta är features-iconen */
 .nav-link {
-  color: var(--color-dark);
+  color: var(--color-black);
   font-weight: 600;
   text-decoration: none;
   margin-left: 5rem
@@ -235,7 +248,7 @@ text-decoration: none;
 
 /* Detta är apple dowloadappen */
 .btn-download-app {
-  background-color: var(--color-dark);
+  background-color: var(--color-black);
   color: var(--color-white);
   border-radius: 8px;
   padding: 12px 25px;
@@ -259,7 +272,7 @@ text-decoration: none;
     border-radius: 50%;
     border: 1px solid var(--color-border-gray600);
     background-color: var(--color-white);
-    color: var(--color-dark);
+    color: var(--color-black);
     
     
   }
@@ -336,7 +349,7 @@ text-decoration: none;
 }
 
 .discover-more {
-  color: var(--color-dark);
+  color: var(--color-black);
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -507,7 +520,7 @@ text-decoration: none;
 #page3 .text-item h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #000;
+  color: var(--color-black);
 }
 
 
@@ -538,7 +551,7 @@ text-decoration: none;
 #transactions h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #000;
+  color: var(--color-black);
 }
 
 #transactions p {
@@ -641,13 +654,14 @@ text-decoration: none;
 
 .item-left button {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-white);
   border: none;
   border-radius: 6px;
   padding: 12px 30px;
   font-family: "manrope", sans-serif;
   cursor: pointer;
   display: inline-flex;
+  width: 10rem;
   align-items: center;
 }
 
@@ -705,13 +719,14 @@ text-decoration: none;
 
 .p4-text button {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-white);
   border: none;
   border-radius: 6px;
   padding: 12px 30px;
   font-family: "manrope", sans-serif;
   cursor: pointer;
   display: inline-flex;
+  width: 10rem;
   align-items: center;
 }
 
@@ -786,7 +801,7 @@ text-decoration: none;
 .clients h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #1E1E1E;
+  color: var(--color-black);
   margin-bottom: 2rem;
 }
 
@@ -799,7 +814,7 @@ text-decoration: none;
 }
 
 .clients-card {
-  background-color: white;
+  background-color: var(--color-white);
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   padding: 2rem;
@@ -839,7 +854,7 @@ text-decoration: none;
 .client-info h4 {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #1E1E1E;
+  color: var(--color-black);
 }
 
 .client-info p {
@@ -851,21 +866,21 @@ text-decoration: none;
 body {
   font-family: 'Manrope', sans-serif;
   line-height: 1.6;
-  color: #0B0F19;
-  background-color: #F8FAFC; /* Ljusare bakgrund */
+  color: var(--color-black);
+  background-color: var(--color-white); /* Ljusare bakgrund */
 }
 
 h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #0B0F19;
+  color: var(--color-black);
   margin-bottom: 1rem;
 }
 
 h4 {
   font-size: 1rem;
   font-weight: bold;
-  color: #0B0F19;
+  color: var(--color-black);
   margin: 0;
 }
 
@@ -874,7 +889,7 @@ p {
 }
 
 a {
-  color: #6366F1;
+  color: var(--color-primary);
   text-decoration: none;
 }
 #green {
@@ -891,7 +906,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   padding: 4rem 1rem;
-  background-color: #FFFFFF;
+  background-color: var(--color-white);
 }
 
 .faq {
@@ -922,7 +937,7 @@ a:hover {
 }
 
 .contact-option {
-  background-color: #FFFFFF;
+  background-color: var(--color-white);
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
@@ -962,7 +977,7 @@ a:hover {
 
 .accordion {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: var(--color-white);
   border-radius: 16px; /* Mer rundade hörn */
   box-shadow: none; /* Tar bort skugga från hela accordionen */
 }
@@ -972,7 +987,7 @@ a:hover {
   border-radius: 5px; 
   margin-bottom: 10px; 
   padding: 1px; 
-  background-color: #FFFFFF; 
+  background-color: var(--color-white); 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Skugga på utsidan */
   transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
@@ -992,8 +1007,8 @@ a:hover {
   align-items: center;
   padding: 1.25rem 1.5rem; 
   cursor: pointer;
-  color: #0B0F19;
-  background-color: #FFFFFF;
+  color: var(--color-black);
+  background-color: var(--color-white);
   transition: background-color 0.3s ease; 
 }
 
@@ -1015,8 +1030,8 @@ a:hover {
 .accordion-content {
   padding: 1rem 1.5rem; 
   color: #4B5563;
-  border-top: 1px solid #FFFFFF;
-  background-color: #FFFFFF; 
+  border-top: 1px solid var(--color-white);
+  background-color: var(--color-white); 
   max-height: 500px; 
   overflow: hidden; 
 }
@@ -1033,7 +1048,7 @@ a:hover {
 
 /* Newsletter Section */
 #newsletter-section {
-  background-color: #FFFFFF;
+  background-color: var(--color-white);
   padding: 3rem 1rem;
   display: flex;
   justify-content: center;
@@ -1068,7 +1083,7 @@ a:hover {
 .newsletter-content h3 {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #0B0F19;
+  color: var(--color-black);
 }
 
 .newsletter-input {
@@ -1086,8 +1101,9 @@ a:hover {
 
 .newsletter-input button {
   padding: 1rem 2rem;
-  background-color: #6366F1;
-  color: white;
+  margin-top: 1rem
+  background-color: var(--color-primary);
+  color: var(--color-white);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -1113,7 +1129,7 @@ footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: var(--color-gray600);
-  background-color: #FFFFFF;
+  background-color: var(--color-white);
 
   .container {
     display: flex;
@@ -1158,14 +1174,14 @@ footer {
 }
 .contact-info h2 {
   font-size: 40px;
-  color: #1d1d1d;
+  color: var(--color-black);
   font-weight: 900;
   margin-left: 3rem;
 }
 
 .contact-details h4 {
   font-size: 24px;
-  color: #1d1d1d;
+  color: var(--color-black);
 }
 
 .contact-details p {
@@ -1174,14 +1190,14 @@ footer {
 }
 
 .bold-text {
-  color: #000; /* Här kan du ändra färgen till vad du vill */
+  color: var(--color-black); 
 }
 
 .contact-details a {
   display: flex;
   align-items: center;
   margin-top: 2rem;
-  color: #6c63ff;
+  color: var(--color-primary);
   font-weight: bold;
   text-decoration: none;
 }
@@ -1193,7 +1209,7 @@ footer {
 /* Form Section */
 .contact-form {
   width: 40%;
-  background-color: #fff;
+  background-color: var(--color-white);
   padding: 90px 70px;
   margin-right: 8.5rem;
   border-radius: 5px;
@@ -1217,7 +1233,7 @@ footer {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 5px;
-  color: #000;
+  color: var(--color-black);
 }
 
 .input-group input, .input-group select {
@@ -1231,8 +1247,8 @@ button {
   width: 100%;
   padding: 15px;
   margin-top: 5rem;
-  background-color: #6c63ff;
-  color: #fff;
+  background-color: var(--color-primary);
+  color: var(--color-white);
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -1277,7 +1293,7 @@ button {
 }
 
 .address i {
-  color: #6c63ff
+  color: var(--color-primary)
 }
 
 /* Social Media Icons */
@@ -1289,6 +1305,10 @@ button {
 .socials img {
   width: 250px;
 }
+
+
+
+
 
 
 
